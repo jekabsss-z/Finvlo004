@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Learn how Finvlo approaches ETF analysis and what is, and is not, in the first spreadsheet." />
+    <title>ETFs | Finvlo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="product-room">
+    <header class="site-header">
+      <a class="wordmark" href="index.html#top" aria-label="Finvlo home">Finvlo</a>
+      <details class="mobile-menu"><summary aria-label="Open navigation"><span></span><span></span></summary><nav aria-label="Main navigation"><a href="stocks.html">Stocks</a><a href="etfs.html" aria-current="page">ETFs</a><a href="pricing.html">Pricing</a><a href="learn.html">Learn</a><a href="profile.html">Profile</a><a class="nav-cta" href="index.html#product">Quality checklist <span aria-hidden="true">↗</span></a></nav></details>
+      <nav class="main-nav" aria-label="Main navigation"><a href="stocks.html">Stocks</a><a href="etfs.html" aria-current="page">ETFs</a><a href="pricing.html">Pricing</a><a href="learn.html">Learn</a><a href="profile.html">Profile</a><a class="nav-cta" href="index.html#product">Quality checklist <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main class="research-app" id="top">
+      <div class="demo-banner"><span>FICTIONAL SAMPLE DATA</span><span>Fund values and past returns are illustrative, not live.</span></div>
+      <section class="research-heading"><div><p class="eyebrow">GLOBAL FUNDS / QUALITY CONTEXT</p><h1>ETF explorer</h1><p>Compare sample fee, past one-year return, and weighted holdings quality.</p></div><a class="app-action" href="methodology.html#fund-score">Fund score method <span aria-hidden="true">↗</span></a></section>
+      <section class="data-feed-strip"><div><span>DATA SOURCE</span><strong id="fund-data-mode">Fictional sample data</strong><small id="fund-data-status">Import your own daily CSV. Live refresh requires a configured market-data API.</small></div><div class="data-feed-actions"><button class="button-secondary" id="download-fund-template" type="button">Download CSV template</button><label class="button-secondary upload-button">Import CSV<input id="fund-csv-import" type="file" accept=".csv,text/csv" /></label></div></section>
+      <section class="fund-summary"><div><span>FUNDS IN SAMPLE</span><strong>10</strong></div><p>Fund score = 30% fee + 30% past one-year return + 40% weighted holdings quality. Past return is not a forecast.</p></section>
+      <section class="market-panel"><div class="market-panel-head"><div><h2>Fund universe</h2><p>Sample ETFs · fictional figures · USD unless stated</p></div><label class="search-box"><span class="sr-only">Search funds</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.5 4.5"/></svg><input id="etf-search" type="search" placeholder="Search fund or ticker" /></label></div>
+        <div class="market-filters"><div class="filter-set" role="group" aria-label="Fund categories"><button class="filter-chip is-active" data-fund-category="All" type="button">All funds</button><button class="filter-chip" data-fund-category="US Equity" type="button">US equity</button><button class="filter-chip" data-fund-category="International" type="button">International</button></div><label class="sort-control">Sort by<select id="etf-sort"><option value="score">Fund score</option><option value="fee">Lowest fee</option><option value="return">1Y return</option></select></label></div>
+        <div class="table-scroll"><table class="market-table fund-table"><thead><tr><th>Fund</th><th>Category</th><th>Region</th><th>Sample NAV</th><th>Fund score</th><th>Annual fee</th><th>1Y return</th><th>Holdings quality</th><th></th></tr></thead><tbody id="etf-list"></tbody></table></div><div class="market-panel-foot"><span id="etf-count">10 funds</span><span>NAV, fee and return values are fictional demo figures. Past return is not a forecast.</span></div>
+      </section>
+      <p class="app-disclaimer">Live fields come from your configured provider; manually imported or bundled demo values are labeled. Past return is not a forecast. <a href="methodology.html#fund-score">See components and limits.</a></p>
+    </main>
+    <footer class="site-footer"><div class="footer-top section-wrap"><a class="wordmark footer-wordmark" href="index.html#top">Finvlo</a><p>Clearer company analysis for everyday investors.</p><nav aria-label="Footer navigation"><a href="stocks.html">Stocks</a><a href="etfs.html">ETFs</a><a href="pricing.html">Pricing</a><a href="learn.html">Learn</a><a href="profile.html">Profile</a></nav></div><div class="footer-bottom section-wrap"><span>© 2026 Finvlo</span><span>Quality analytics for your own research. Not financial advice.</span></div></footer>
+  </body>
+</html>

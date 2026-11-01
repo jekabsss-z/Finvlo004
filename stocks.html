@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Explore Finvlo's company-quality checklist for your own stock research. No price ratings or buy and sell calls." />
+    <title>Stocks | Finvlo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="product-room">
+    <header class="site-header">
+      <a class="wordmark" href="index.html#top" aria-label="Finvlo home">Finvlo</a>
+      <details class="mobile-menu"><summary aria-label="Open navigation"><span></span><span></span></summary><nav aria-label="Main navigation"><a href="stocks.html" aria-current="page">Stocks</a><a href="etfs.html">ETFs</a><a href="pricing.html">Pricing</a><a href="learn.html">Learn</a><a href="profile.html">Profile</a><a class="nav-cta" href="index.html#product">Quality checklist <span aria-hidden="true">↗</span></a></nav></details>
+      <nav class="main-nav" aria-label="Main navigation"><a href="stocks.html" aria-current="page">Stocks</a><a href="etfs.html">ETFs</a><a href="pricing.html">Pricing</a><a href="learn.html">Learn</a><a href="profile.html">Profile</a><a class="nav-cta" href="index.html#product">Quality checklist <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main class="research-app" id="top">
+      <div class="demo-banner"><span>FICTIONAL SAMPLE DATA</span><span>No live prices or company filings are connected.</span></div>
+      <section class="research-heading"><div><p class="eyebrow">GLOBAL EQUITIES / QUALITY RESEARCH</p><h1>Stock screener</h1><p>Compare business quality across a fictional sample universe. Scores never include price. Demo scores are equal-weight pillar previews, not production rankings.</p></div><a class="app-action" href="methodology.html">How scores work <span aria-hidden="true">↗</span></a></section>
+      <section class="data-feed-strip"><div><span>DATA SOURCE</span><strong id="stock-data-mode">Fictional sample data</strong><small id="stock-data-status">Import your own daily CSV. Live refresh requires a configured market-data API.</small></div><div class="data-feed-actions"><button class="button-secondary" id="download-stock-template" type="button">Download CSV template</button><label class="button-secondary upload-button">Import CSV<input id="stock-csv-import" type="file" accept=".csv,text/csv" /></label></div></section>
+      <section class="market-overview"><article><span>COMPANIES IN SAMPLE</span><strong id="sample-company-count">12</strong><small>Across 11 markets</small></article><article><span>QUALITY LEADERS</span><strong id="quality-leader-count">--</strong><small>Sample score above 80</small></article><article><span>PRICE CONTEXT</span><strong id="price-context-state">Off</strong><small>Separate from quality</small></article><article class="overview-chart"><span>DEMO INDEX / 1Y</span><svg viewBox="0 0 170 48" role="img" aria-label="Illustrative sample index chart"><path d="M1 38 C18 34 19 22 33 27 S51 31 65 18 S82 26 94 19 S113 24 124 10 S143 19 169 4"/><path class="chart-fill" d="M1 38 C18 34 19 22 33 27 S51 31 65 18 S82 26 94 19 S113 24 124 10 S143 19 169 4 L169 48 L1 48Z"/></svg><small>Illustrative only</small></article></section>
+      <section class="market-panel"><div class="market-panel-head"><div><h2>Company universe</h2><p>Sample company fundamentals · fictional values</p></div><label class="search-box"><span class="sr-only">Search companies</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.5 4.5"/></svg><input id="stock-search" type="search" placeholder="Search name or ticker" /></label></div>
+        <div class="market-filters"><div class="filter-set" role="group" aria-label="Stock sectors"><button class="filter-chip is-active" data-sector="All" type="button">All</button><button class="filter-chip" data-sector="Technology" type="button">Technology</button><button class="filter-chip" data-sector="Healthcare" type="button">Healthcare</button><button class="filter-chip" data-sector="Consumer" type="button">Consumer</button><button class="filter-chip" data-sector="Financials" type="button">Financials</button><button class="filter-chip" data-sector="Energy" type="button">Energy</button><button class="filter-chip" data-sector="Materials" type="button">Materials</button></div><label class="sort-control">Sort by<select id="stock-sort"><option value="score">Quality score</option><option value="name">Company name</option><option value="ticker">Ticker</option></select></label></div>
+        <div class="table-scroll"><table class="market-table"><thead><tr><th>Company</th><th>Market</th><th>Sector</th><th>Sample price</th><th>Quality score</th><th>ROIC</th><th>Revenue CAGR</th><th>Checklist</th><th></th></tr></thead><tbody id="stock-list"></tbody></table></div><div class="market-panel-foot"><span id="stock-count">12 companies</span><span>All prices and fundamentals are fictional demo values, not live quotes.</span></div>
+      </section>
+      <p class="app-disclaimer">Live fields come from your configured provider; manually imported or bundled demo values are labeled. Finvlo measures business quality, not price. <a href="methodology.html">Read the scoring method.</a></p>
+    </main>
+    <footer class="site-footer"><div class="footer-top section-wrap"><a class="wordmark footer-wordmark" href="index.html#top">Finvlo</a><p>Clearer company analysis for everyday investors.</p><nav aria-label="Footer navigation"><a href="stocks.html">Stocks</a><a href="etfs.html">ETFs</a><a href="pricing.html">Pricing</a><a href="learn.html">Learn</a><a href="profile.html">Profile</a></nav></div><div class="footer-bottom section-wrap"><span>© 2026 Finvlo</span><span>Quality analytics for your own research. Not financial advice.</span></div></footer>
+  </body>
+</html>
