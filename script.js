@@ -204,7 +204,7 @@ if (researchRoutes.has(location.pathname.split("/").pop())) {
   document.body.classList.add("product-room");
   document.querySelectorAll(".site-header .wordmark").forEach((wordmark) => {
     const image = document.createElement("img");
-    image.src = "finvlo_brand_kit/logo/finvlo_wordmark_cream_1500w.png";
+    image.src = "finvlo_wordmark_cream_1500w.png";
     image.alt = "Finvlo";
     wordmark.replaceChildren(image);
   });
@@ -234,7 +234,7 @@ if (researchRoutes.has(location.pathname.split("/").pop())) {
 if (!researchRoutes.has(location.pathname.split("/").pop())) {
   document.querySelectorAll(".site-header .wordmark").forEach((wordmark) => {
     const image = document.createElement("img");
-    image.src = "finvlo_brand_kit/logo/finvlo_wordmark_ink_1500w.png";
+    image.src = "finvlo_wordmark_ink_1500w.png";
     image.alt = "Finvlo";
     wordmark.replaceChildren(image);
   });
